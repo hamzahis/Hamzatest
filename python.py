@@ -3,7 +3,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 # Route to get the public IP of the requester
-@app.route('/')
+@app.route('/hamzatest-bbft.vercel.app')
 def get_public_ip():
     # The 'X-Forwarded-For' header contains the public IP of the requester
     public_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
